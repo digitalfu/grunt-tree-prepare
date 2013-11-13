@@ -1,0 +1,5 @@
+{
+  "name": "grunt-tree-prepare-test",
+  "version": "0.1.0",
+  "taskList": ["test"]
+}

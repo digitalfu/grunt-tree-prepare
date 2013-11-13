@@ -1,0 +1,33 @@
+{
+  "name": "grunt-tree-prepare",
+  "description": "Make directory trees.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Yoshitaka Sakamoto",
+    "url": "http://github.com/ystskm",
+    "email": "sakamoto@liberty-technology.biz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ystskm/grunt-tree-prepare"
+  },
+  "licenses": [{
+      "type": "MIT",
+      "url": "https://github.com/ystskm/grunt-tree-prepare/blob/master/LICENSE"
+  }],
+  "engines": {
+    "node": "~0.10.0"
+  },
+  "dependencies": {
+    "rimraf": "2.2.2",
+    "event-drive": "1.0.0"
+  },
+  "devDependencies": {
+    "nodeunit-ci": "~0.9.1",
+    "grunt-runner": "*"
+  },
+  "scripts": {
+    "test": "node test/_runner.js"
+  },
+  "keywords": ["gruntplugin", "tree"]
+}

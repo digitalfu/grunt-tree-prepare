@@ -27,7 +27,7 @@ grunt.loadTasks('.'), module.exports = nodeunit.testCase({
     // run the task
     grun(__dirname, js_conf);
 
-    // assertion and go to next task(clean)
+    // assertion and go to next task (clean)
     grunt.event.on('tree-prepare.end', function(done) {
       t.ok(true, 'task successfully.'), Object.keys(tree).forEach(function(p) {
         t.ok(fs.statSync(options.root + '/' + p).isDirectory());

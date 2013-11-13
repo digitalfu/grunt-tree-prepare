@@ -27,7 +27,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-tree-prepare');
   grunt.registerTask(taskname, ['tree-prepare']);
 };
-```js
+```
 
 ### Configuration
 - options(Object)  

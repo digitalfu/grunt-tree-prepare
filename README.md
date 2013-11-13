@@ -35,12 +35,14 @@ module.exports = function(grunt) {
   Setup clean default for directory.  
   (not truely/falsy)  
   
-- tree(Object|Array)
+- branch(Array)
   When Array is provided, one of array value a[i] will converts to { a[i]: {} } object.  
 `"(Object key)(String)"`  
   Relative path from parent directory. If it's a top object of _tree_, process.cwd() is the parent.  
+  
 `"chmod(Number|String)"` default: 777  //TODO  
   Change directory mode. String representation (e.g. "rw-rw-rw-" as 666) can be given.  
+  
 `"clean(Boolean)"` default: false | options.clean  
   Crean up (use (rimraf)[git://github.com/isaacs/rimraf.git]) directory contents and itself, create new.  
   

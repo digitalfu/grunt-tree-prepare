@@ -1,7 +1,7 @@
 # grunt-tree-prepare
 
 Make directory trees.  
-Clean option is provided.
+Clean option can be provided.
 
 ## Install
 
@@ -21,10 +21,10 @@ module.exports = function(grunt) {
   grunt.config.set('tree-prepare', {
     tree: {
       'foo': ['var'],
-      'hoge': { fuga: { clean: true }}
+      'hoge': { branch: 'fuga', clean: true }
     }
   });
-  grunt.loadNpmTasks('grunt-contrib-tree-prepare');
+  grunt.loadNpmTasks('grunt-tree-prepare');
   grunt.registerTask(taskname, ['tree-prepare']);
 };
 ```

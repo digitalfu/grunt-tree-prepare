@@ -47,5 +47,5 @@ module.exports = function(grunt) {
 `"chmod(Number|String)"` *default: 777  //TODO*  
   Set directory mode. String representation (e.g. "rw-rw-rw-" as 666) can be given.  
 `"clean(Boolean)"` *default: false | options.clean*  
-  Crean up (use (rimraf)[git://github.com/isaacs/rimraf.git]) directory contents and itself, create new.  
+  Crean up ( use (rimraf)[git://github.com/isaacs/rimraf.git] ) directory contents and itself, create new.  
   

@@ -4,6 +4,7 @@
   
 Make directory trees.  
 Clean option can be provided.
+You can use this both as gruntjs plugin and as a library for nodejs.
 
 ## Install
 
@@ -11,15 +12,22 @@ Install with [npm](http://npmjs.org/):
 
     npm install grunt-tree-prepare --save-dev
     
-## Usage - Use in your Gruntfile.js task with tree object.
+## Usage
+### - as JavaScript library.
+```js
+var emitter = require('grunt-tree-prepare')(tree, options)
+emitter.on('error', ... ).on('end', ... );
+```
+
+### - Use in your Gruntfile.js task with tree object.
 ```js
 module.exports = function(grunt) {
   // make directory tree below:
   // process.cwd()
-  //  |- foo  -      <= create if not exist
-  //  |       L var  <= create if not exist
-  //  L- hoge -      <= create if not exist
-  //          L fuga <= cleanup and create
+  //  |- foo  -       <= create if not exist
+  //  |       |- var  <= create if not exist
+  //  |- hoge -       <= create if not exist
+  //          |- fuga <= cleanup and create new
   grunt.config.set('tree-prepare', {
     tree: {
       'foo': ['var'],
@@ -27,7 +35,7 @@ module.exports = function(grunt) {
     }
   });
   grunt.loadNpmTasks('grunt-tree-prepare');
-  grunt.registerTask(taskname, ['tree-prepare']);
+  grunt.registerTask('default', ['tree-prepare']);
 };
 ```
 

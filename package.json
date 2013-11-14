@@ -1,13 +1,12 @@
 {
   "name": "grunt-tree-prepare",
-  "version": "0.5.3",
+  "version": "0.9.0",
   "author": {
     "name": "Yoshitaka Sakamoto",
     "url": "http://github.com/ystskm",
     "email": "sakamoto@liberty-technology.biz"
   },
   "contributors": [],
-  "dependencies": {},
   "description": "Make directory trees.",
   "repository": {
     "type": "git",
@@ -30,6 +29,7 @@
     "grunt-runner": "*",
     "grunt": "~0.4.0"
   },
+  "main": "lib/tree-prepare.js",
   "scripts": {
     "test": "node test/_runner.js"
   },

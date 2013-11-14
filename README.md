@@ -34,9 +34,9 @@ module.exports = function(grunt) {
 `"clean"(Boolean)` default: false  
   Setup clean default for directory.  
   (not truely/falsy)  
-`"autoDone"(Boolean)` default: true
-  auto call task end signal.
-  if specified false, "tree-prepare.end" event leads "done" argument 
+`"autoDone"(Boolean)` default: true  
+  Flag for task end signal auto call.  
+  If specified false, "tree-prepare.end" event leads "done" argument
   as an first argument to grunt.event. See *test/basic.js*.
   
 - tree(Object)  

@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 - tree(Object)  
 `"(Object key)(String)"`  
   Relative path from parent directory. If it's a top object of _tree_, process.cwd() is the parent.  
-`"branch"(Array|String)"`
+`"branch"(Array|String)"`  
   Create directories with the same status included in the object that belongs.  
 `"chmod(Number|String)"` default: 777  //TODO  
   Set directory mode. String representation (e.g. "rw-rw-rw-" as 666) can be given.  

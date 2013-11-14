@@ -31,10 +31,10 @@ module.exports = function(grunt) {
 
 ### Configuration
 - options(Object)  
-`"clean"(Boolean)` default: false  
+`"clean"(Boolean)` *default: false*  
   Setup clean default for directory.  
   (not truely/falsy)  
-`"autoDone"(Boolean)` default: true  
+`"autoDone"(Boolean)` *default: true*  
   Flag for task end signal auto call.  
   If specified false, "tree-prepare.end" event leads "done" argument
   as an first argument to grunt.event. See *test/basic.js*.
@@ -44,8 +44,8 @@ module.exports = function(grunt) {
   Relative path from parent directory. Parent of _tree_ is process.cwd().  
 `"branch"(Array|String)"`  
   Create directories with the same status included in the object that belongs.  
-`"chmod(Number|String)"` default: 777  //TODO  
+`"chmod(Number|String)"` *default: 777  //TODO*  
   Set directory mode. String representation (e.g. "rw-rw-rw-" as 666) can be given.  
-`"clean(Boolean)"` default: false | options.clean  
+`"clean(Boolean)"` *default: false | options.clean*  
   Crean up (use (rimraf)[git://github.com/isaacs/rimraf.git]) directory contents and itself, create new.  
   

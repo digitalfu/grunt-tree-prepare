@@ -1,5 +1,7 @@
 # grunt-tree-prepare
-
+  
+[![Build status](https://travis-ci.org/ystskm/grunt-tree-prepare.png)](https://travis-ci.org/ystskm/grunt-tree-prepare)  
+  
 Make directory trees.  
 Clean option can be provided.
 
